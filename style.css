@@ -1,0 +1,156 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e1e;
+}
+
+#game-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Start Overlay Styles */
+#start-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-container {
+    text-align: center;
+}
+
+#start-container h1 {
+    font-size: 80px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+#start-button {
+    padding: 20px 40px;
+    font-size: 24px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-button:hover {
+    background-color: #c0392b;
+}
+
+/* Name Input Overlay Styles */
+.name-input-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(44, 62, 80, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-input-container {
+    background: #34495e;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+.name-input-container p {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.name-input-container input {
+    padding: 15px;
+    font-size: 18px;
+    width: 280px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.name-input-container button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #27ae60;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.name-input-container button:hover {
+    background-color: #229954;
+}
+
+/* Leaderboard Styles */
+.leaderboard-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 320px;
+    background-color: rgba(52, 73, 94, 0.9);
+    color: #ecf0f1;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.leaderboard-container h2 {
+    margin-top: 0;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.leaderboard-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.leaderboard-list li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #7f8c8d;
+    padding-bottom: 5px;
+}
+
+.leaderboard-list li span {
+    display: inline-block;
+}
+
+/* Scrollbar Styles */
+.leaderboard-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.leaderboard-list::-webkit-scrollbar-thumb {
+    background: #95a5a6;
+    border-radius: 4px;
+}
+
+.leaderboard-list::-webkit-scrollbar-track {
+    background: #7f8c8d;
+}
